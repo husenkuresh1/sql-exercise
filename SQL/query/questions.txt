@@ -1,0 +1,174 @@
+Questions:
+List out top 10 authors who have written most books.
+
+List out top 10 publishers who published most books.
+
+List out top 10 books by average rating.
+
+List out top 10 books by count of ratings.
+
+List out rating wise books count. (take ceiling of rating) (e.g. 10 - 10012 , 9 - 34344, 8 - 123121)
+
+Which years had most books published. (also show count)(top 10 only)
+
+List publishers with the author who has published highest number of books with that publisher. also show number of books.
+
+List publisher wise most rated book. Show rating as well.
+
+List top 10 users who has read most books(have given ratings to more books).
+
+List top 10 author by average rating (with rating). (author with his average ratings from all books)
+
+List top 5 user per publisher who has read more books of the same publisher. (given more number of ratings to the same publisher)(
+
+List each author’s publisher wise average rating order by rating(higher to lower).
+
+Answer format
+Answer: 1
+
+-------------------------------
+| author | count |    rank    |
+-------------------------------
+|  SADAS |  ASD  |     1      |
+|  DASSD |  AAS  |     1      |
+|  SDSSS |  XXS  |     2      |
+.
+.
+.
+
+
+Answer: 2
+----------------------
+|publisher|count|rank|
+----------------------
+| ADSAD   | ADA | 1  |
+| ASSSS   | CCC | 1  |
+| DDDSS   | SSS | 2  |
+.
+.
+.
+
+Answer: 3
+-------------------------
+|isbn|book_rating| rank |
+-------------------------
+|DSAA|10.0       |1     |
+|ASSA|10.0       |1     |
+|XASA|10.0       |1     |
+|CCSS|9.5        |1     |
+.
+.
+.
+
+Answer: 4
+------------
+|isbn|count|
+------------
+|XASX|10   |
+|ASXS|21   |
+.
+.
+.
+
+Answer 4 updated format : 
+|isbn|count|rank|
+|----|-----|----|
+|XXX|SSS|Q|
+|ZZZ|DDD|W|
+
+
+Answer: 5
+------------------
+|avg_rating|count|
+------------------
+|10        |ADS  |
+|9         |DDS  |
+.
+.
+.
+
+Answer: 6
+-----------------------------
+|publication_year|count|rank|
+-----------------------------
+|ADDS            |ACS  |1   |
+|CSCA            |ASA  |2   |
+.
+.
+.
+
+Answer: 7
+------------------------------
+|publisher|author|books_count|
+------------------------------
+|ADSADSA  |ASD   |AS         |
+|JHGJAS   |DDS   |CC         |
+.
+.
+.
+
+
+Answer: 8
+-----------------------------------------------
+| publisher | isbn   | book_rating            |
+-----------------------------------------------
+| ASDCAS    | ADSADA | 9.0000000000000000     |
+| ASDSD     | ASDS   | 3.5000000000000000     |
+.
+.
+.
+
+Answer: 9
+----------------------------------------------
+| user_id | books_count | book_rating        |
+----------------------------------------------
+| ASDSDS  | ASDWD       | 9.0000000000000000 |
+| ASDSD   | DWDWW       | 3.5000000000000000 |
+.
+.
+.
+
+Answer: 10
+---------------------------------------
+| author | author_avg_rating   | rank |
+---------------------------------------
+| DDSS   | 10.0000000000000000 | 1    |
+| SADAA  | 10.0000000000000000 | 1    |
+| ASDSD  | 10.0000000000000000 | 1    |
+.
+.
+.
+
+Answer: 11
+-------------------------------------------
+| publisher | user_id | read_count | rank |
+-------------------------------------------
+| AAA       | 137190  | 4          | 1    |
+| AAA       | 84995   | 2          | 2    |
+| BBB       | 44444   | 3          | 1    |
+.
+.
+.
+
+Answer: 12
+-------------------------------------------------------
+| author  | publisher | avg_rating             | rank |
+-------------------------------------------------------
+| ASDSD   | ASDSD     | 5.0000000000000000     | 1    |
+| ADSADSD | ADSS      | 7.0000000000000000     | 1    |
+| AASDSD  | ASD       | 0.00000000000000000000 | 1    |
+.
+.
+.
+
+Outputs:
+You need to submit these files
+
+PDF, JPG/PNG of the schema design (can be a screen-shot)
+SQL file with DDL queries
+SQL file with answer (One answer per file: first, write the question in a comment at the top, and then write the query.)
+Notes:
+First, check the data to decide the best way to store the fields.
+Ensure you follow the naming conventions and consider optimization needs for the future.
+Set up a structure in the database before seeding the data.
+Try not to lose any data during seeding.
